@@ -19,11 +19,12 @@
         {
         "type": "file",
             "source": "r1soft.repo",
-            "destination": "/etc/yum.repos.d/r1soft.repo"
+            "destination": "/tmp/r1soft.repo"
         },
         {
         "type": "shell",
             "inline": [
+                "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/"
                 "sudo yum update -y"
             ]
         }
