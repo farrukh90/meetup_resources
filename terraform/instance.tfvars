@@ -1,0 +1,10 @@
+Appname                     = "Flask"
+min_size                    = 3
+max_size                    = 12
+desired_capacity            = 3
+ami                         = "ami-08c425e7941223f7f"                  
+instance_type               = "t2.medium"
+security_groups             = "sg-0940b91b843e0ee61"
+subnet1                     = "subnet-c74d1e8d"
+subnet2                     = "subnet-e4820eb8"
+subnet3                     = "subnet-4ff37d61"
