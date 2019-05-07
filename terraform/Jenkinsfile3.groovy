@@ -2,8 +2,8 @@ node {
     stage("Clone a repo"){
         git 'https://github.com/farrukh90/meetup_resources.git'
     }
-    stage("Initialization"){
-        ws("${workspace}/terraform/"){
+    ws("${workspace}/terraform/"){
+        stage("Initialization"){
             sh "pwd"
     }
     stage("Terraform Plan"){
