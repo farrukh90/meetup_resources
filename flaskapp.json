@@ -18,7 +18,7 @@
             "inline": [
                 "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/",
                 "sudo yum update -y",
-                "sudo yum install git serverbackup-enterprise-agent -y"
+                "sudo yum install git python-pip serverbackup-enterprise-agent -y"
             ]
         },
         {
@@ -27,7 +27,7 @@
                 "git clone https://github.com/farrukh90/Flaskex.git",
                 "sudo mkdir -p /flaskex/",
                 "sudo cp Flaskex/flaskex.service /etc/systemd/system/",
-                "pip install Flaskex/requirements.txt"
+                "pip install -r Flaskex/requirements.txt",
                 "sudo cp Flaskex/app.py /flaskex/",
                 "systemctl enable flaskex"
             ]
