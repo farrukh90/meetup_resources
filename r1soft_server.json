@@ -13,6 +13,8 @@
          "ssh_username": "{{user `ssh_username`}}",
          "ami_name": "Backup-{{timestamp}}"
        }],
+
+"_comment": "Installs Backup Server",
     "provisioners": [
         {
         "type": "file",
