@@ -3,7 +3,7 @@ node {
         git 'https://github.com/farrukh90/meetup_resources.git'
     }
     stage("Initialization"){
-        dir('terraform/')
+        ws ("terraform/"){
             sh "pwd"
     }
     stage("Terraform Plan"){
