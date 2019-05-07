@@ -1,0 +1,31 @@
+{
+    "variables": {
+        "instance_type": "",
+        "wordpress_version": "",
+        "ami": "",
+        "region": "",
+        "ssh_username": ""
+       },
+    "builders": [{
+         "type": "amazon-ebs",
+         "region": "{{user `region`}}",
+         "source_ami": "{{user `ami`}}",
+         "instance_type": "{{user `instance_type`}}",
+         "ssh_username": "{{user `ssh_username`}}",
+         "ami_name": "Backup-{{timestamp}}"
+       }],
+    "provisioners": [
+        {
+        "type": "file",
+            "source": "r1soft.repo",
+            "destination": "/etc/yum.repos.d/r1soft.repo"
+        },
+        {
+        "type": "shell",
+            "inline": [
+                "sudo yum update -y"
+            ]
+        }
+    ]
+}
+   

@@ -1,0 +1,6 @@
+{
+    "instance_type":     "m5.large",
+    "ami":               "ami-0de53d8956e8dcf80",
+    "region":            "us-east-1",
+    "ssh_username":      "ec2-user"
+}
