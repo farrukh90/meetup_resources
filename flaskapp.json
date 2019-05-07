@@ -25,7 +25,7 @@
         "type": "shell",
             "inline": [
                 "sudo yum install wget httpd php-gd -y",
-                "wget -O /tmp/ http://wordpress.org/latest.tar.gz",
+                "wget -O /tmp/latest.tar.gz http://wordpress.org/latest.tar.gz",
                 "tar xzvf /tmp/latest.tar.gz",
                 "sudo sudo rsync -avP ~/wordpress/ /var/www/html/",
                 "sudo mkdir /var/www/html/wp-content/uploads",
