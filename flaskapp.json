@@ -14,7 +14,7 @@
                 "sudo yum install git python-pip -y",
                 "git clone https://github.com/farrukh90/Flaskex.git /tmp/Flaskex",
                 "sudo cp /tmp/Flaskex/flaskex.service /etc/systemd/system/",
-                "pip install /tmp/Flaskex/requirements.txt",
+                "pip install /tmp/Flaskex/Flaskex/requirements.txt",
                 "systemctl enable flaskex"
             ]
         }
