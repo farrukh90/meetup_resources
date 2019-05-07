@@ -12,10 +12,9 @@
         "type": "shell",
             "inline": [
                 "sudo yum install git python-pip -y",
-                "cd /tmp",
                 "git clone https://github.com/farrukh90/Flaskex.git",
-                "sudo cp /tmp/Flaskex/flaskex.service /etc/systemd/system/",
-                "sudo pip install /tmp/Flaskex/requirements.txt",
+                "sudo cp ~/Flaskex/flaskex.service /etc/systemd/system/",
+                "sudo pip install ~/Flaskex/requirements.txt",
                 "systemctl enable flaskex"
             ]
         }
