@@ -9,13 +9,16 @@
        }],
     "provisioners": [
         {
+        "type": "file",
+            "source": "r1soft.repo",
+            "destination": "/tmp/r1soft.repo"
+        },
+        {
         "type": "shell",
             "inline": [
-                "sudo yum install git python-pip -y",
-                "git clone https://github.com/farrukh90/Flaskex.git /tmp/Flaskex",
-                "sudo cp /tmp/Flaskex/flaskex.service /etc/systemd/system/",
-                "pip install /tmp/Flaskex/Flaskex/requirements.txt",
-                "systemctl enable flaskex"
+                "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/",
+                "sudo yum update -y",
+                "sudo  yum install serverbackup-enterprise-agent -y"
             ]
         }
     ]
