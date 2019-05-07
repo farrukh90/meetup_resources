@@ -1,7 +1,6 @@
 {
     "variables": {
         "instance_type": "",
-        "wordpress_version": "",
         "ami": "",
         "region": "",
         "ssh_username": ""
