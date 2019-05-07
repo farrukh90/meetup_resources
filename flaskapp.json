@@ -24,7 +24,7 @@
         {
         "type": "shell",
             "inline": [
-                "sudo yum install wget httpd php-gd -y",
+                "sudo yum install wget httpd php-gd php php-mysql -y",
                 "wget -P /tmp/ http://wordpress.org/latest.tar.gz",
                 "tar xzvf /tmp/latest.tar.gz",
                 "sudo sudo rsync -avP ~/wordpress/ /var/www/html/",
