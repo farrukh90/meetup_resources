@@ -25,7 +25,9 @@
         "type": "shell",
             "inline": [
                 "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/",
-                "sudo yum update -y"
+                "sudo yum update -y",
+                "sudo yum install r1soft-cdp-enterprise-server -y",
+                "sudo r1soft-server setup --http-port 8080 --user admin --pass Welcome1"
             ]
         }
     ]
