@@ -29,7 +29,7 @@
                 "sudo cp Flaskex/flaskex.service /etc/systemd/system/",
                 "sudo pip install -r Flaskex/requirements.txt",
                 "sudo cp Flaskex/app.py /flaskex/",
-                "systemctl enable flaskex"
+                "sudo systemctl enable flaskex"
             ]
         }
     ]
