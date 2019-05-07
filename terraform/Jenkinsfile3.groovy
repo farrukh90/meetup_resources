@@ -3,9 +3,8 @@ node {
         git 'https://github.com/farrukh90/meetup_resources.git'
     }
     stage("Initialization"){
-        dir('terraform')
-            sh "terraform get"
-            sh "terraform init"
+        dir('terraform/')
+            sh "pwd"
     }
     stage("Terraform Plan"){
         sh "terraform plan -var-file=instance.tfvars"
