@@ -6,6 +6,6 @@ node {
         sh "cd terraform && terraform get && terraform init"
     }
     stage("Terraform Plan"){
-        sh "cd terraform && terraform apply -var-file=instance.tfvars --auto-approve"
+        sh "cd terraform && terraform destroy -var-file=instance.tfvars --auto-approve"
     }
 }
