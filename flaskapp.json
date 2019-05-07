@@ -27,6 +27,7 @@
                 "git clone https://github.com/farrukh90/Flaskex.git",
                 "sudo mkdir -p /flaskex/",
                 "sudo cp Flaskex/flaskex.service /etc/systemd/system/",
+                "pip install Flaskex/requirements.txt"
                 "sudo cp Flaskex/app.py /flaskex/",
                 "systemctl enable flaskex"
             ]
