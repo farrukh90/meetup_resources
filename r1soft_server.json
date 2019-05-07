@@ -24,7 +24,7 @@
         {
         "type": "shell",
             "inline": [
-                "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/"
+                "sudo cp /tmp/r1soft.repo /etc/yum.repos.d/",
                 "sudo yum update -y"
             ]
         }
